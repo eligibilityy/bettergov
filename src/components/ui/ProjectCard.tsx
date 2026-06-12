@@ -135,6 +135,8 @@ function ProjectModal({
                     className='flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-gray-200 bg-gray-50 hover:bg-blue-50 hover:border-blue-200 transition-colors group'
                   >
                     <img
+                      loading='lazy'
+                      decoding='async'
                       src={`https://github.com/${username}.png?size=32`}
                       alt={username}
                       className='w-5 h-5 rounded-full object-cover'
@@ -301,6 +303,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     onClick={e => e.stopPropagation()}
                   >
                     <img
+                      loading='lazy'
+                      decoding='async'
                       src={`https://github.com/${username}.png?size=32`}
                       alt={username}
                       className='w-6 h-6 rounded-full border-2 border-white object-cover hover:scale-110 transition-transform'

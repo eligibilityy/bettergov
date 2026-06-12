@@ -184,6 +184,8 @@ export function Banner({ project }: BannerProps) {
         <img
           src={project.imageUrl}
           alt=''
+          loading='lazy'
+          decoding='async'
           aria-hidden='true'
           className='absolute inset-0 w-full h-full object-cover'
           onError={e => {
